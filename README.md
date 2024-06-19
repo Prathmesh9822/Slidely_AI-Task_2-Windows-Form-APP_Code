@@ -1,4 +1,5 @@
 # SlidelyAI_Prathmesh_Gaikwad_Task-2
+**SlidelyAI Task-2 creating a windows from in visual studio and this is it's Windows Application or Form code which is done in the Visual Code using VB language as per stated. as well as all the basic functionality are working along with the connections to the database or in this case the backend.**
 
 # Windows App for Submissions
 
