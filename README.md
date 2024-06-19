@@ -36,10 +36,11 @@ Ensure your backend server is running at http://localhost:3000/.
 Press F5 in Visual Studio to build and run the application.
 ## Usage 
 **Creating a Submission**:
-* Open the application and click Create Submission.
-* Fill in the form with your details and click Start to begin the stopwatch.
-* Click Pause to pause the stopwatch and Resume to resume it.
-* Once done, press Ctrl + S or click Submit to save your submission.
+1. Open the application and click Create Submission.
+2. Fill in the form with your details and click Start to begin the stopwatch.
+3. Click Pause to pause the stopwatch and Resume to resume it.
+4. Once done, press Ctrl + S or click Submit to save your submission.
+  
 **Viewing Submissions**:
-* Open the application and click View Submissions.
-* Use the Next and Previous buttons or the keyboard shortcuts (Ctrl + N and Ctrl + P) to navigate through the submissions.
+1. Open the application and click View Submissions.
+2. Use the Next and Previous buttons or the keyboard shortcuts (Ctrl + N and Ctrl + P) to navigate through the submissions.
