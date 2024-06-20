@@ -26,6 +26,9 @@ Public Class Form1
         ElseIf e.Control AndAlso e.KeyCode = Keys.N Then
             ' Ctrl + N: Create New Submission
             Button2.PerformClick() ' Simulate a click on Button2 (Create New Submission)
+        ElseIf e.Control AndAlso e.KeyCode = Keys.A Then
+            ' Ctrl + A: Additional Features
+            Button3.PerformClick() ' Simulate a click on Button3 (Additional Features )
         End If
     End Sub
 
@@ -42,6 +45,13 @@ Public Class Form1
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ' Create a new instance of the CreateNewSubmissionForm
         Dim createForm As New CreateNewSubmissionForm()
+
+        ' Make the new form visible
+        createForm.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim createForm As New Additional_Features()
 
         ' Make the new form visible
         createForm.Show()

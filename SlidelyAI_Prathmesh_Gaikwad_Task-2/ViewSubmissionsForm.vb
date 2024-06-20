@@ -10,7 +10,19 @@ Public Class ViewSubmissionsForm
         AddHandler Me.KeyDown, AddressOf ViewSubmissionsForm_KeyDown ' Hook into the KeyDown event
         Await LoadSubmission(index)
     End Sub
+    Private Async Function nextbtn_Click(sender As Object, e As EventArgs) As Task Handles nextbtn.Click
+        index += 1
+        Await LoadSubmission(index)
+    End Function
 
+    Private Async Function previousbtn_Click(sender As Object, e As EventArgs) As Task Handles previousbtn.Click
+        If index > 0 Then
+            index -= 1
+            Await LoadSubmission(index)
+        Else
+            MessageBox.Show("No previous submission available.")
+        End If
+    End Function
     ' KeyDown event handler
     Private Async Sub ViewSubmissionsForm_KeyDown(sender As Object, e As KeyEventArgs)
         If e.Control AndAlso e.KeyCode = Keys.P Then
@@ -48,19 +60,9 @@ Public Class ViewSubmissionsForm
         stopwatchview.Text = submission.Stopwatch_Time.ToString '("hh\:mm\:ss") ' Format the time string
     End Sub
 
-    Private Async Function previousbtn_Click(sender As Object, e As EventArgs) As Task Handles previousbtn.Click
-        If index > 0 Then
-            index -= 1
-            Await LoadSubmission(index)
-        Else
-            MessageBox.Show("No previous submission available.")
-        End If
-    End Function
 
-    Private Async Function nextbtn_Click(sender As Object, e As EventArgs) As Task Handles nextbtn.Click
-        index += 1
-        Await LoadSubmission(index)
-    End Function
+
+
 
     ' Define Submission class structure (replace with actual structure)
     Public Class Submission
@@ -70,4 +72,8 @@ Public Class ViewSubmissionsForm
         Public Property GitHub_Link As String
         Public Property Stopwatch_Time As String ' Assuming Stopwatch_Time is a formatted string
     End Class
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

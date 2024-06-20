@@ -22,7 +22,6 @@ Partial Class ViewSubmissionsForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        ListBox1 = New ListBox()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
@@ -38,57 +37,53 @@ Partial Class ViewSubmissionsForm
         Label6 = New Label()
         SuspendLayout()
         ' 
-        ' ListBox1
-        ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
-        ListBox1.Location = New Point(399, 56)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(120, 34)
-        ListBox1.TabIndex = 0
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.Location = New Point(70, 75)
         Label1.Name = "Label1"
-        Label1.Size = New Size(39, 15)
+        Label1.Size = New Size(49, 20)
         Label1.TabIndex = 1
         Label1.Text = "Name"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.Location = New Point(70, 104)
         Label2.Name = "Label2"
-        Label2.Size = New Size(36, 15)
+        Label2.Size = New Size(46, 20)
         Label2.TabIndex = 2
         Label2.Text = "Email"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.Location = New Point(70, 133)
         Label3.Name = "Label3"
-        Label3.Size = New Size(71, 15)
+        Label3.Size = New Size(86, 20)
         Label3.TabIndex = 3
         Label3.Text = "Phone Num"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(70, 162)
         Label4.Name = "Label4"
-        Label4.Size = New Size(68, 15)
+        Label4.Size = New Size(83, 20)
         Label4.TabIndex = 4
         Label4.Text = "Github Link"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.Location = New Point(70, 191)
         Label5.Name = "Label5"
-        Label5.Size = New Size(94, 15)
+        Label5.Size = New Size(118, 20)
         Label5.TabIndex = 5
         Label5.Text = "StopWatch Time"
         ' 
@@ -97,23 +92,25 @@ Partial Class ViewSubmissionsForm
         Nameview.Location = New Point(233, 67)
         Nameview.Name = "Nameview"
         Nameview.ReadOnly = True
-        Nameview.Size = New Size(100, 23)
+        Nameview.Size = New Size(282, 23)
         Nameview.TabIndex = 6
         ' 
         ' previousbtn
         ' 
+        previousbtn.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         previousbtn.Location = New Point(51, 300)
         previousbtn.Name = "previousbtn"
-        previousbtn.Size = New Size(125, 38)
+        previousbtn.Size = New Size(176, 38)
         previousbtn.TabIndex = 7
         previousbtn.Text = "Previous (CTRL + P) "
         previousbtn.UseVisualStyleBackColor = True
         ' 
         ' nextbtn
         ' 
-        nextbtn.Location = New Point(208, 300)
+        nextbtn.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        nextbtn.Location = New Point(233, 300)
         nextbtn.Name = "nextbtn"
-        nextbtn.Size = New Size(125, 38)
+        nextbtn.Size = New Size(176, 38)
         nextbtn.TabIndex = 8
         nextbtn.Text = "Next (CTRL + N)"
         nextbtn.UseVisualStyleBackColor = True
@@ -123,7 +120,7 @@ Partial Class ViewSubmissionsForm
         EmailView.Location = New Point(233, 96)
         EmailView.Name = "EmailView"
         EmailView.ReadOnly = True
-        EmailView.Size = New Size(100, 23)
+        EmailView.Size = New Size(282, 23)
         EmailView.TabIndex = 9
         ' 
         ' Phoneview
@@ -131,7 +128,7 @@ Partial Class ViewSubmissionsForm
         Phoneview.Location = New Point(233, 125)
         Phoneview.Name = "Phoneview"
         Phoneview.ReadOnly = True
-        Phoneview.Size = New Size(100, 23)
+        Phoneview.Size = New Size(282, 23)
         Phoneview.TabIndex = 10
         ' 
         ' githubview
@@ -139,7 +136,7 @@ Partial Class ViewSubmissionsForm
         githubview.Location = New Point(233, 154)
         githubview.Name = "githubview"
         githubview.ReadOnly = True
-        githubview.Size = New Size(100, 23)
+        githubview.Size = New Size(282, 23)
         githubview.TabIndex = 11
         ' 
         ' stopwatchview
@@ -147,15 +144,16 @@ Partial Class ViewSubmissionsForm
         stopwatchview.Location = New Point(233, 183)
         stopwatchview.Name = "stopwatchview"
         stopwatchview.ReadOnly = True
-        stopwatchview.Size = New Size(100, 23)
+        stopwatchview.Size = New Size(282, 23)
         stopwatchview.TabIndex = 12
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(70, 22)
+        Label6.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Location = New Point(115, 13)
         Label6.Name = "Label6"
-        Label6.Size = New Size(264, 30)
+        Label6.Size = New Size(352, 40)
         Label6.TabIndex = 13
         Label6.Text = "Slidely Task-2,Slidely Form App VIEW Submission" & vbCrLf & vbCrLf
         ' 
@@ -177,14 +175,11 @@ Partial Class ViewSubmissionsForm
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(ListBox1)
         Name = "ViewSubmissionsForm"
         Text = "ViewSubmissionsForm"
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label

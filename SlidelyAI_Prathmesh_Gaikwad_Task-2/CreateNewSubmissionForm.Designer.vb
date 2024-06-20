@@ -41,9 +41,10 @@ Partial Class CreateNewSubmissionForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(225, 16)
+        Label1.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(116, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(292, 15)
+        Label1.Size = New Size(546, 30)
         Label1.TabIndex = 0
         Label1.Text = "Prathmesh Gaikwad, Slidely Task-2, Create Submission"
         ' 
@@ -77,6 +78,7 @@ Partial Class CreateNewSubmissionForm
         ' 
         ' btnStopwatch
         ' 
+        btnStopwatch.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         btnStopwatch.Location = New Point(84, 191)
         btnStopwatch.Name = "btnStopwatch"
         btnStopwatch.Size = New Size(212, 40)
@@ -86,6 +88,7 @@ Partial Class CreateNewSubmissionForm
         ' 
         ' Button2
         ' 
+        Button2.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.Location = New Point(54, 246)
         Button2.Name = "Button2"
         Button2.Size = New Size(651, 36)
@@ -93,42 +96,43 @@ Partial Class CreateNewSubmissionForm
         Button2.Text = "Submit ( CTRL + S )"
         Button2.UseVisualStyleBackColor = True
         ' 
-        ' timerStopwatch
-        ' 
-        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.Location = New Point(84, 69)
         Label2.Name = "Label2"
-        Label2.Size = New Size(39, 15)
+        Label2.Size = New Size(49, 20)
         Label2.TabIndex = 7
         Label2.Text = "Name"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.Location = New Point(87, 98)
         Label3.Name = "Label3"
-        Label3.Size = New Size(36, 15)
+        Label3.Size = New Size(46, 20)
         Label3.TabIndex = 8
         Label3.Text = "Email"
         ' 
         ' lablephone
         ' 
         lablephone.AutoSize = True
+        lablephone.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         lablephone.Location = New Point(84, 127)
         lablephone.Name = "lablephone"
-        lablephone.Size = New Size(71, 15)
+        lablephone.Size = New Size(86, 20)
         lablephone.TabIndex = 9
         lablephone.Text = "Phone Num"
         ' 
         ' lablegit
         ' 
         lablegit.AutoSize = True
+        lablegit.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         lablegit.Location = New Point(84, 156)
         lablegit.Name = "lablegit"
-        lablegit.Size = New Size(70, 15)
+        lablegit.Size = New Size(86, 20)
         lablegit.TabIndex = 10
         lablegit.Text = "GitHub Link"
         ' 
